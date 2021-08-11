@@ -1,17 +1,16 @@
 # Spotiapp
 
 El proyecto fue creado con [Angular CLI] version 12.0.1.
+Utiliza una API de spotify que hay que solicitar de: https://accounts.spotify.com/api/token
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para correr la aplicacion solo se debe inicializar el comando 'Ng Serve', con Angular CLI previamnete instalado
 
-## Code scaffolding
+## Imagenes del proyecto
+<img src="imagen proyecto1.jpg" alt="Imagen proyecyo1"/>
+<hr>
+<img src="imagen proyecto2.jpg" alt="Imagen proyecyo1"/>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 

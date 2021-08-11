@@ -23,7 +23,7 @@ export class SpotifyService {
 
     // creamos una constante para definir el uso de los permisos que utilizamos en postman(luego los utilizamos en la funcion de abajo)
     const headers = new HttpHeaders({
-      "Authorization": "Bearer BQDk6o65qYC4YHwIhfxLB1BsuST5yqYSZZaEQ0h0pcdJJHDFewx-kUbTBEXHmcBUm1dvFN7RnHyQ4duLitk"
+      "Authorization": "Bearer BQDrYWM76OPrL5W0v_tTSA8MCReOqOTDXv_s9WZcQXaOp6viAz1Q8C0tWgl6lv7Kxr2R9GBg80JqwxaJdC4"
     });
 
     return this.http.get(url, { headers });
