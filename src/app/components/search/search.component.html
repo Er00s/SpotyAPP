@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col">
+        <!--el hash es para captar la referencia local y que sirva en el component-->
+        <!--con el (keyup) estoy tomando lo que se escribe en la caja de texto y enviadolo al componente-->
+        <input type="text" #termino (keyup)=" buscar(termino.value) " class="form-control" placeholder="Buscar Artista...">
+    </div>
+</div>
+
+<app-loading *ngIf="loading" class="m-5"> </app-loading>
+<app-tarjetas *ngIf="!loading" [items]="artistas"> </app-tarjetas>

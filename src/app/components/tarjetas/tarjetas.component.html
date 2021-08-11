@@ -1,0 +1,25 @@
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-5 animated fadeIn ">
+
+    <!--recibimos item que estan definido en el html de home y de search enviando desde ellos el codigo del ts
+    por eso usamos item images, item artists -->
+    <div (click)="verArtista( item )" *ngFor="let item of items" class="col puntero">
+        <div class=" card h-100">
+            <!--poner [src] determina que es una propiedad-->
+            <!--img [src]="cancion.images[0].url " class="card-img-top" alt="..."-->
+            <img [src]="item.images | noimage " class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{item.name}}
+                </h5>
+                <p class="card-text">
+                    <span *ngFor="let artista of item.artists" class="badge rounded-pill bg-warning text-dark">
+                        {{artista.name}}
+
+                    </span>
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
